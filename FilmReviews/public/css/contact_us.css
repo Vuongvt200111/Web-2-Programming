@@ -1,0 +1,93 @@
+﻿.contact-admin-wrapper {
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../uploads/contact_us.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px 15px;
+}
+
+.contact-card {
+    background-color: rgba(15, 23, 42, 0.85);
+    color: #f8f9fa;
+    border: 1px solid #ffc107;
+    border-radius: 20px 0 20px 0 !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.contact-header {
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 18px 0 0 0 !important;
+}
+
+.contact-label {
+    color: #ffc107; 
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact-input-disabled {
+    background-color: #6c757d !important;
+    color: #f8f9fa !important;
+    border: none;
+    cursor: not-allowed;
+}
+
+.contact-small-text {
+    color: #0dcaf0; 
+    display: block;
+    margin-top: 0.4rem;
+}
+
+.contact-textarea {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    box-shadow: 0 .125rem .25rem rgba(109, 108, 108, 0.093);
+    border-color: #ffc107;
+}
+
+.contact-textarea:focus {
+    background-color: #5c636a;
+    color: #fff;
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+.reply-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 16px 0 16px 0 !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reply-card:hover {
+    border-color: #555;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.user-msg-bubble {
+    background: #2a2a2a;
+    border-left: 4px solid #ffc107;
+    border-radius: 12px 0 12px 0 !important;
+    padding: 12px 16px;
+}
+
+.admin-reply-bubble {
+    background: #14281d;
+    border-left: 4px solid #28a745;
+    border-radius: 12px 0 12px 0 !important;
+    padding: 14px 18px;
+    margin-top: 12px;
+}
+

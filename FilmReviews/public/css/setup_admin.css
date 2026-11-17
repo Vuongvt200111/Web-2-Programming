@@ -1,0 +1,7 @@
+.setup-admin-body {
+    background-image: url('../../uploads/dashboard.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}

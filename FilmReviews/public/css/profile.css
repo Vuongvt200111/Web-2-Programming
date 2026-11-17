@@ -1,0 +1,355 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url("../../uploads/profile.png") no-repeat center/cover;
+}
+
+.profile-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  color: rgb(255, 255, 255);
+}
+
+.profile-title {
+  color: #ebeb02;
+  border-bottom: 2px solid #facc15;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.profile-layout {
+  display: flex;
+  gap: 30px;
+}
+
+.profile-card,
+.profile-form {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px 0 20px 0 !important;
+  backdrop-filter: none;
+  padding: 20px;
+}
+
+.profile-card {
+  width: 30%;
+  text-align: center;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #facc15;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  background-color: #1a202c;
+}
+
+.username {
+  margin-top: 10px;
+}
+
+.credibility {
+  margin-top: 5px;
+  color:#050028;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.admin {
+  background: red;
+}
+
+.user {
+  background: #0ea5e9;
+}
+
+.active {
+  color: #01890a;
+  font-weight: bold;
+}
+
+.onbreak {
+  color: rgb(209, 136, 0);
+  font-weight: bold;
+}
+
+.btn-delete {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid red;
+  color: red;
+  text-decoration: none;
+  border-radius: 6px;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+  background: red;
+  color: white;
+}
+
+.profile-form {
+  width: 70%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input:not(.visually-hidden),
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(167, 166, 166, 0.845);
+  color: rgb(0, 0, 0);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.btn-update {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00c3ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  box-shadow: 0 0 10px #00c3ff;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.error {
+  background: rgba(255,0,0,0.2);
+}
+
+.success {
+  background: rgba(0,255,150,0.2);
+}
+
+
+/* Sidebar Navigation Menu (Shopee-style My Account Tree for Reviewers) */
+.profile-sidebar-menu {
+  margin-top: 16px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 9px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar-btn-notification {
+  background-color: #ffc107;
+  color: #111827 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-btn-notification:hover {
+  background-color: #eab308;
+  color: #000000 !important;
+  transform: translateY(-1px);
+}
+
+#my-films-search::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+.my-films-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 540px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.my-film-item {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.my-film-item:hover {
+  border-color: rgba(250, 204, 21, 0.55);
+  background: rgba(15, 23, 42, 0.88);
+}
+
+.my-film-poster {
+  width: 54px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+.my-films-filter-pill {
+  background: rgba(15, 23, 42, 0.7);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.my-films-filter-pill:hover,
+.my-films-filter-pill.active {
+  background: #facc15;
+  color: #0f172a;
+  border-color: #facc15;
+}
+
+.sidebar-my-account-box {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(250, 204, 21, 0.45);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sidebar-btn-my-account {
+  background: rgba(30, 41, 59, 0.9);
+  color: #f8fafc;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+}
+
+.sidebar-btn-my-account:hover {
+  background: rgba(51, 65, 85, 0.95);
+  color: #facc15;
+}
+
+.sidebar-submenu {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 0 8px 0;
+}
+
+.sidebar-submenu.collapsed {
+  display: none;
+}
+
+.sidebar-sub-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 14px 8px 34px;
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.sidebar-sub-link::before {
+  content: "•";
+  position: absolute;
+  left: 20px;
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.sidebar-sub-link:hover {
+  color: #facc15;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sidebar-sub-link.active {
+  color: #facc15;
+  font-weight: 700;
+  background: rgba(250, 204, 21, 0.12);
+}
+
+.sidebar-sub-link.active::before {
+  color: #facc15;
+}
+
+/* Responsive Layout Protection for Profile View */
+@media (max-width: 820px) {
+  .profile-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profile-card,
+  .profile-form {
+    width: 100%;
+  }
+}

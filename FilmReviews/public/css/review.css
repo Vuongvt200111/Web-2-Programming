@@ -1,0 +1,139 @@
+header, .navbar, nav, #navbar {
+    display: none !important;
+}
+
+body {
+    padding-top: 0 !important;
+    background-color: #0b0f19;
+    color: #f3f4f6;
+}
+
+.netflix-bg {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.overlay-bg-custom {
+    padding-bottom: 80px;
+}
+
+.glass-card {
+    background: rgba(17, 24, 39, 0.85);
+    border: 1px solid rgba(75, 85, 99, 0.4);
+    border-radius: 18px 0 18px 0 !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.score-circle {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3);
+}
+
+.tag-pill {
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 6px 12px;
+    border-radius: 9999px;
+}
+
+.tag-pill:hover {
+    transform: translateY(-2px);
+    border-color: #facc15;
+    background: rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(250, 204, 21, 0.3);
+}
+
+.tag-pill.active {
+    background-color: #fef08a !important;
+    color: #713f12 !important;
+    font-weight: 800 !important;
+    border-color: #eab308 !important;
+    box-shadow: 0 0 12px rgba(254, 240, 138, 0.8) !important;
+    transform: translateY(-1px);
+}
+
+.submitted-tag-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #fef08a !important;
+    color: #713f12 !important;
+    font-weight: 700 !important;
+    font-size: 0.76rem !important;
+    padding: 3px 11px !important;
+    border-radius: 9999px !important;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #facc15 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+    letter-spacing: 0.2px;
+    text-shadow: none !important;
+}
+
+.spoiler-content {
+    position: relative;
+    cursor: pointer;
+}
+
+.spoiler-blur {
+    filter: blur(7px);
+    user-select: none;
+    transition: filter 0.3s ease;
+}
+
+.spoiler-banner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(17, 24, 39, 0.85);
+    border-radius: 12px 0 12px 0 !important;
+    color: #f87171;
+    font-weight: 600;
+    font-size: 0.88rem;
+    transition: opacity 0.3s ease;
+}
+
+.spoiler-content.revealed .spoiler-blur {
+    filter: none;
+    user-select: auto;
+}
+
+.spoiler-content.revealed .spoiler-banner {
+    display: none;
+}
+
+.verdict-btn {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    opacity: 0.7;
+}
+
+.verdict-btn.selected {
+    opacity: 1;
+    border-color: currentColor;
+    transform: scale(1.02);
+}
+
+.progress-star {
+    height: 7px;
+    border-radius: 4px;
+    background-color: rgba(75, 85, 99, 0.4);
+}

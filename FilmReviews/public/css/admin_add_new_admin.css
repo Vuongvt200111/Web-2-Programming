@@ -1,0 +1,74 @@
+.admin-switch-stage {
+    display: grid;
+    grid-template-columns: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.admin-switch-panel {
+    grid-area: 1 / 1;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    will-change: transform, opacity;
+    transition:
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.38s ease,
+        visibility 0s linear 0.45s;
+}
+
+.admin-switch-panel.panel-create {
+    transform: translateX(-100%);
+}
+
+.admin-switch-panel.panel-restore {
+    transform: translateX(100%);
+}
+
+.admin-switch-panel.is-active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.38s ease,
+        visibility 0s linear 0s;
+}
+
+.admin-switch-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0.9rem;
+}
+
+.admin-switch-link {
+    background: transparent;
+    border: 0;
+    padding: 2px 4px;
+    color: #38bdf8;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.admin-switch-link:hover,
+.admin-switch-link:focus-visible {
+    color: #ffc107;
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(255, 193, 7, 0.45);
+    outline: none;
+}
+
+.admin-switch-link.back-link {
+    color: #fbbf24;
+}
+
+.admin-switch-link.back-link:hover,
+.admin-switch-link.back-link:focus-visible {
+    color: #38bdf8;
+}

@@ -1,0 +1,91 @@
+﻿.filter-btn {
+    background-color: rgba(33, 37, 41, 0.8);
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.filter-btn:hover {
+    background-color: rgba(50, 55, 60, 0.9);
+    border-color: #ffc107;
+    color: #ffc107;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background-color: #ffc107;
+    color: #212529;
+    border-color: #ffc107;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+}
+
+/* Anniversary Specials (Milestone Editions) Filter Bar */
+.anniversary-filter-btn {
+    background-color: rgba(20, 24, 34, 0.85) !important;
+    color: #ffc107 !important;
+    border: 1.5px solid rgba(255, 193, 7, 0.75) !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.25s ease !important;
+}
+
+.anniversary-filter-btn:hover,
+.anniversary-filter-btn:focus-visible {
+    background-color: rgba(45, 38, 18, 0.96) !important;
+    color: #ffe066 !important;
+    border-color: #ffd43b !important;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.45) !important;
+    transform: translateY(-2px);
+}
+
+.anniversary-filter-btn.active,
+.anniversary-filter-btn:active {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+    color: #0f172a !important;
+    border-color: #fbbf24 !important;
+    font-weight: 700 !important;
+    box-shadow: 0 0 16px rgba(245, 158, 11, 0.6) !important;
+}
+
+/* Reviewer's My Published Films Quick-Filter Pill */
+.my-films-filter-btn {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%) !important;
+    color: #ffffff !important;
+    border: 1.5px solid #7dd3fc !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.45) !important;
+    transition: all 0.25s ease !important;
+}
+
+.my-films-filter-btn:hover,
+.my-films-filter-btn:focus-visible {
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%) !important;
+    color: #0f172a !important;
+    border-color: #bae6fd !important;
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.65) !important;
+    transform: translateY(-2px);
+}
+
+.my-films-filter-btn.active,
+.my-films-filter-btn:active {
+    background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%) !important;
+    color: #0f172a !important;
+    border: 2px solid #cffafe !important;
+    font-weight: 800 !important;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.78) !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

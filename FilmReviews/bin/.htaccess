@@ -1,0 +1,11 @@
+# Block direct access via HTTP/HTTPS at the Apache layer, combined with blocking non-CLI PHP execution (returning a 403 Forbidden error) at the PHP layer.
+
+# Deny all direct HTTP/HTTPS access to server CLI utilities (Defense in Depth)
+
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

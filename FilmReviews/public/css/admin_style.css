@@ -1,0 +1,251 @@
+﻿.admin-body {
+  background-color: #0f172a;
+  background-image:
+    linear-gradient(rgba(74, 75, 77, 0), rgba(15, 23, 42, 0.068)), url("../../uploads/admin_dashboard.png");
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed;
+
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.admin-navbar {
+  background: rgba(15, 23, 42, 0.21) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.neon-text {
+  text-shadow:
+    0 0 10px rgba(220, 53, 69, 0.8),
+    0 0 20px rgba(220, 53, 69, 0.4);
+}
+
+.neon-border {
+  border-color: #0dcaf0;
+  box-shadow: 0 0 8px rgba(13, 202, 240, 0.4);
+  transition: all 0.3s ease;
+}
+.neon-border:hover {
+  background-color: #0dcaf0;
+  color: #000;
+  box-shadow: 0 0 15px rgba(13, 202, 240, 0.8);
+}
+
+.user-badge {
+  padding: 5px 15px;
+  border-radius: 12px 0 12px 0 !important;
+  border: 2px solid rgba(255, 214, 90, 0.712);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+}
+
+.user-avatar-mini {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 214, 90, 0.85);
+  background-color: #1a1a24;
+  box-shadow: 0 0 8px rgba(255, 193, 7, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.user-avatar-mini:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.65);
+}
+
+.admin-card {
+  background: rgba(0, 0, 0, 0.325);
+  backdrop-filter: blur(0.5px);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 18px 0 18px 0 !important;
+  overflow: hidden;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgb(255, 255, 255);
+}
+
+/* Global Hard Frames Diagonal Symmetric Corners in Admin */
+.card,
+.alert,
+.modal-content,
+.table-responsive {
+  border-radius: 18px 0 18px 0 !important;
+}
+
+.card-header {
+  border-radius: 16px 0 0 0 !important;
+}
+
+/* Visually Hidden Helper for Custom File Uploads */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Admin Footer Styles matching JokesSystem & Index design standards */
+footer.site-footer,
+footer.admin-footer {
+  background-color: #0b0f19;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: center;
+}
+
+footer.site-footer p,
+footer.admin-footer p {
+  margin-bottom: 0.25rem;
+}
+
+footer.site-footer strong,
+footer.admin-footer strong {
+  color: #f8fafc;
+}
+
+footer.site-footer .text-secondary,
+footer.admin-footer .text-secondary {
+  color: #64748b !important;
+}
+
+/* Audit Logs Scope Buttons (Square 4 Corners & Anti-Glare Badge Contrast) */
+.audit-scope-btn {
+  border-radius: 0 !important;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700 !important;
+}
+
+.audit-scope-btn .audit-count-badge {
+  border-radius: 0 !important;
+  background-color: #0b0f19 !important;
+  padding: 3px 8px !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 1. Reviewers Activities Button */
+.audit-btn-reviewer {
+  border: 2px solid #0dcaf0 !important;
+  background-color: rgba(13, 202, 240, 0.08) !important;
+  color: #0dcaf0 !important;
+}
+.audit-btn-reviewer .audit-count-badge {
+  color: #0dcaf0 !important;
+  border: 1px solid rgba(13, 202, 240, 0.75) !important;
+}
+.audit-btn-reviewer:hover,
+.audit-btn-reviewer:focus,
+.audit-btn-reviewer.active-scope {
+  background-color: #0dcaf0 !important;
+  color: #0b0f19 !important;
+  box-shadow: 0 0 14px rgba(13, 202, 240, 0.55) !important;
+}
+.audit-btn-reviewer:hover .audit-count-badge,
+.audit-btn-reviewer:focus .audit-count-badge,
+.audit-btn-reviewer.active-scope .audit-count-badge {
+  background-color: #0b0f19 !important;
+  color: #0dcaf0 !important;
+  border: 1px solid #0b0f19 !important;
+}
+
+/* 2. Administrator Activities Button */
+.audit-btn-admin {
+  border: 2px solid #dc3545 !important;
+  background-color: rgba(220, 53, 69, 0.08) !important;
+  color: #ff6b7b !important;
+}
+.audit-btn-admin .audit-count-badge {
+  color: #ff6b7b !important;
+  border: 1px solid rgba(220, 53, 69, 0.75) !important;
+}
+.audit-btn-admin:hover,
+.audit-btn-admin:focus,
+.audit-btn-admin.active-scope {
+  background-color: #dc3545 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 14px rgba(220, 53, 69, 0.55) !important;
+}
+.audit-btn-admin:hover .audit-count-badge,
+.audit-btn-admin:focus .audit-count-badge,
+.audit-btn-admin.active-scope .audit-count-badge {
+  background-color: #0b0f19 !important;
+  color: #ffd54f !important;
+  border: 1px solid rgba(255, 213, 79, 0.85) !important;
+}
+
+/* 3. Small Button: Admin Deleted Tasks */
+.audit-btn-deleted {
+  border: 2px solid #ffc107 !important;
+  background-color: rgba(255, 193, 7, 0.08) !important;
+  color: #ffd54f !important;
+  font-size: 0.85rem !important;
+}
+.audit-btn-deleted .audit-count-badge {
+  color: #ffd54f !important;
+  border: 1px solid rgba(255, 193, 7, 0.75) !important;
+}
+.audit-btn-deleted:hover,
+.audit-btn-deleted:focus,
+.audit-btn-deleted.active-scope {
+  background-color: #ffc107 !important;
+  color: #0b0f19 !important;
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.55) !important;
+}
+.audit-btn-deleted:hover .audit-count-badge,
+.audit-btn-deleted:focus .audit-count-badge,
+.audit-btn-deleted.active-scope .audit-count-badge {
+  background-color: #0b0f19 !important;
+  color: #ffd54f !important;
+  border: 1px solid #0b0f19 !important;
+}
+
+/* High-Visibility Audit Log ID Pill */
+.audit-id-badge {
+  display: inline-block;
+  color: #ffd54f !important;
+  background-color: rgba(255, 213, 79, 0.14) !important;
+  border: 1px solid rgba(255, 213, 79, 0.55) !important;
+  padding: 2px 8px;
+  font-family: Consolas, "Courier New", monospace;
+  font-weight: 800;
+  font-size: 0.86rem;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0 6px rgba(255, 213, 79, 0.3);
+}
+
+/* 4. Reset Filter Button (High-Contrast Normal & Hover States) */
+.audit-btn-reset {
+  background-color: rgba(15, 23, 42, 0.88) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(226, 232, 240, 0.75) !important;
+  transition: all 0.2s ease-in-out;
+}
+.audit-btn-reset:hover,
+.audit-btn-reset:focus,
+.audit-btn-reset:active {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(248, 250, 252, 0.55) !important;
+}

@@ -1,0 +1,42 @@
+<?php
+declare(strict_types=1);
+
+return [
+    'upload_dir'         => dirname(__DIR__) . DIRECTORY_SEPARATOR . 'uploads',
+    'default_avatar'     => 'default_avatar.webp',
+    'default_poster'     => 'default.png',
+    'max_bytes'          => 5242880,
+    'allowed_extensions' => ['jpg', 'jpeg', 'png', 'webp'],
+    'mime_to_canonical'  => [
+        'image/jpeg'  => 'jpg',
+        'image/pjpeg' => 'jpg',
+        'image/png'   => 'png',
+        'image/x-png' => 'png',
+        'image/webp'  => 'webp',
+    ],
+    'protected_assets'   => [
+        'default_avatar.webp',
+        'default.png',
+        'profile.png',
+        'profile (2).jpeg',
+        'admin_dashboard.png',
+        'login.png',
+        'contact_us.png',
+        'dashboard.png',
+        'dashboard1.png',
+        'dashboard_.png',
+        'admin_edit.png',
+        'allred.png',
+        'mix.png',
+        'tokusatsu2.png',
+        'saostar-6b34lot6mgpta5zy.webp',
+        'zero-one.png',
+        'user_edit.png',
+        'user_editfilm.png',
+        'user_postfilm.png',
+        'mail_logs',
+        '.htaccess',
+        'index.php',
+    ],
+    'source_scan_dirs'   => ['public', 'views', 'app', 'config', 'bin', 'database'],
+];

@@ -1,0 +1,17 @@
+# HỆ THỐNG ĐIỀU PHỐI ĐỊNH TUYẾN FRONT CONTROLLER
+
+
+# Ngăn chặn duyệt danh sách thư mục trực tiếp vì mục đích an ninh
+Options -Indexes
+
+# Chuyển hướng tập trung về Cổng vào Front Controller duy nhất
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Bỏ qua các tệp tin hoặc thư mục thực tế (CSS, hình ảnh trong uploads)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Điều hướng tương đối toàn bộ yêu cầu còn lại về index.php tại thư mục chứa .htaccess
+    RewriteRule ^(.*)$ index.php?route=$1 [QSA,L]
+</IfModule>
